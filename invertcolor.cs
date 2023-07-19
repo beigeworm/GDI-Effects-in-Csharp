@@ -11,7 +11,7 @@ using System.Diagnostics;
 
 namespace destructive_trojan
 {
-    public class Class1
+    public class invertcolor
     {
         [DllImport("Shell32.dll", EntryPoint = "ExtractIconExW", CharSet = CharSet.Unicode, ExactSpelling = true,
         CallingConvention = CallingConvention.StdCall)]
