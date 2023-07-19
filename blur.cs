@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 namespace gditest
 {
 
-    public class Class1
+    public class blur
     {
         [DllImport("gdi32.dll")]
         static extern IntPtr CreatePen(PenStyle fnPenStyle, int nWidth, uint crColor);
@@ -532,7 +532,7 @@ namespace gditest
         public static void Main()
         {
             DateTime startTime = DateTime.Now;
-            TimeSpan maxDuration = TimeSpan.FromSeconds(30);
+            TimeSpan maxDuration = TimeSpan.FromSeconds(30);    // Duration of the Effect
             Random r;
             int x = Screen.PrimaryScreen.Bounds.Width, y = Screen.PrimaryScreen.Bounds.Height;
             uint[] rndclr = { 0xFF0000, 0xFF00BC, 0x00FF33, 0xFFFF700, 0x00FFEF };
